@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    background-color:#D0BF74;
+
+  }
+  
+  body, h1, h2, h3, p, a, footer {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .banner {
+    color: white;
+    padding: 150px;
+    text-align: center;
+    background-image: url("images/stadium.png");
+    background-size: cover;
+    background-color: white;
+  }
+  
+  .banner h1 {
+    font-size: 45px;
+    font-weight: 900;
+  }
+  
+  .banner p {
+    font-size: 32px;
+  }
+    
+  .btn-gold {
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #D0BF74;
+    padding: 15px 25px;
+    color: #333;
+    display: inline-block;
+  }
+
+
+  .btn-gold:hover {
+    background-color: #ffffff;
+    color: #283048;
+  }  
+  
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.card {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    margin : 20px;
+    padding : 20px;
+}
+
+.container {
+    width: 900px;
+    margin: 20px auto;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.btn-zizou {
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #152210;
+  padding: 15px 25px;
+  color: #D0BF74;
+  display: inline-block;
+}
+ 
+.btn-zizou:hover {
+  background-color: #ffffff;
+  color: #283048;
+}
+
+.btn-ronaldo {
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #152210;
+    padding: 15px 25px;
+    color: #D0BF74;
+    display: inline-block;
+}
+
+.btn-ronaldo:hover {
+  background-color: #ffffff;
+  color: #283048;
+}
+
+.btn-henry {
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #152210;
+    padding: 15px 25px;
+    color: #D0BF74;
+    display: inline-block;
+}
+
+.btn-henry:hover {
+  background-color: #ffffff;
+  color: #283048;
+}
+
+  .footer {
+    background-color: #152210;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+.socialmedia-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .socialmedia-list a {
+    color: #D0BF74;
+    font-size: 24px;
+  }
+  
+  .socialmedia-list a:hover {
+    color: #ffffff;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .card-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .card-image img.alternate {
+    opacity: 0;
+  }
+  
+  .card-image:hover img.original {
+    opacity: 0;
+  }
+  
+  .card-image:hover img.alternate {
+    opacity: 1;
+  }  
+
+  .category-search {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .category-search h2 {
+    color: #152210;
+    margin-bottom: 20px;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    align-items: flex-start;
+  }
+  
+  .category {
+    width: 150px;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #152210;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category i {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .category img {
+    max-width: 80%;
+    max-height: 80px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+.category p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+} 
+  .all-categories {
+    display: block;
+    margin-top: 20px;
+    color: #283048;
+    text-decoration: none;
+  }
+  
+  .all-categories:hover {
+    text-decoration: underline;
+  }
+
+  .category:hover {
+    background-color: #152210;
+    transition: background-color 0.3s ease;
+  }
+  
+.category:hover p,
+.category:hover i {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.categories a.category {
+    text-decoration: none;
+  }
+
+.categories a.category:hover {
+    text-decoration: none;
+    background-color: #D0BF74;
+    color: #ffffff;
+    transform: translateY(-5px);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }  
+  
+  .typeform {
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin: 60px auto;
+    width: 1000px;
+  }  
